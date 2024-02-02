@@ -313,6 +313,9 @@ a {
 .product__sale .product__cards .product__card .product__add:hover svg path {
   fill: #F16D7F;
 }
+.product__sale .product__cards .product__card:hover {
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+}
 .product__sale .product__cards .product__card:hover .product__add {
   display: flex;
 }
