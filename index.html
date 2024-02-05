@@ -15,10 +15,36 @@
         <div class="header__heading">
             <div class="heading__left">
                 <a href="index.html"><img class="heading__logo" src="img/logo.png" alt="logo"></a>
-                <form action="#" id="dropdown">
-                    <button class="btn btn__dropdown" type="menu" data-bs-toggle="dropdown" aria-expanded="false" form="dropdown">Browse <i class="fa fa-caret-down" aria-hidden="true"></i></button>
-                    <input type="search" class="form__control" aria-label="Text input with dropdown button" placeholder="Search for Item...">
-                    <button class="btn btn__search" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <form class="heading__form" action="#" id="dropdown">
+                    <div class="dropdown">
+                        <button class="btn__dropdown" onclick="btnFunction()" type="menu">
+                            Browse <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            <div class="dropdown-content" id="btnDropdown">
+                                <h3 class="heading__title" for="dropdown">Women</h3>
+                                <a class="heading__link" href="#">Dresses</a>
+                                <a class="heading__link" href="#">Tops</a>
+                                <a class="heading__link" href="#">Sweaters/Knits</a>
+                                <a class="heading__link" href="#">Jackets/Coats</a>
+                                <a class="heading__link" href="#">Blazers</a>
+                                <a class="heading__link" href="#">Denim</a>
+                                <a class="heading__link" href="#">Leggings/Pants</a>
+                                <a class="heading__link" href="#">Skirts/Shorts</a>
+                                <a class="heading__link" href="#">Accessories</a>
+                                <br>
+                                <h3 class="heading__title" for="dropdown">Men</h3>
+                                <a class="heading__link" href="#">Tees/Tank tops</a>
+                                <a class="heading__link" href="#">Shirts/Polos</a>
+                                <a class="heading__link" href="#">Sweaters</a>
+                                <a class="heading__link" href="#">Sweatshirts/Hoodies</a>
+                                <a class="heading__link" href="#">Blazers</a>
+                                <a class="heading__link" href="#">Jackets/vests</a>
+                            </div>
+                        </button>
+                    </div>
+                </form>
+                <form class="heading__form" action="#">
+                    <input type="search" class="form__control" placeholder="Search for Item...">
+                    <button class="btn__search" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                 </form>
             </div>
             <div class="heading_right">
@@ -26,7 +52,7 @@
                     <img src="img/forma_1_1113.png" alt="basket">
                 </a>
                 <div class="dropdown">
-                    <button class="btn btn__account" onclick="myFunction()" type="menu">My Account <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+                    <button class="btn__account" onclick="myFunction()" type="menu">My Account <i class="fa fa-caret-down" aria-hidden="true"></i></button>
                     <div class="dropdown-content" id="myDropdown">
                         <a href="#">Login</a>
                         <a href="#">Register</a>
@@ -34,20 +60,289 @@
                 </div>
             </div>
         </div>
-        <hr>
-        <nav class="header__nav">
-            <ul class="nav__items">
-                <li class="nav__item"><a href="index.html">HOME</a></li>
-                <li class="nav__item"><a href="#">MAN</a></li>
-                <li class="nav__item"><a href="#">WOMEN</a></li>
-                <li class="nav__item"><a href="#">KIDS</a></li>
-                <li class="nav__item"><a href="#">ACCOSERIESE</a></li>
-                <li class="nav__item"><a href="#">FEATURED</a></li>
-                <li class="nav__item"><a href="#">HOT DEALS</a></li>
-            </ul>
-        </nav>
     </header>
     <section class="top__main">
+        <nav class="header__nav">
+            <ul class="nav__items">
+                <li class="nav__item"><a href="index.html" class="nav__link">HOME</a>
+                    <div class="mega__box">
+                        <div class="mega__item">
+                            <h3 class="mega__title">HOME</h3>
+                            <a href="#" class="mega__link">Dresses</a>
+                            <a href="#" class="mega__link">Tops</a>
+                            <a href="#" class="mega__link">Sweaters/Knits</a>
+                            <a href="#" class="mega__link">Jackets/Coats</a>
+                            <a href="#" class="mega__link">Blazers</a>
+                            <a href="#" class="mega__link">Denim</a>
+                            <a href="#" class="mega__link">Leggings/Pants</a>
+                            <a href="#" class="mega__link">Skirts/Shorts</a>
+                            <a href="#" class="mega__link">Accessories</a>
+                        </div>
+                        <div class="mega__item">
+                            <h3 class="mega__title">HOME</h3>
+                            <a href="#" class="mega__link">Dresses</a>
+                            <a href="#" class="mega__link">Tops</a>
+                            <a href="#" class="mega__link">Sweaters/Knits</a>
+                            <a href="#" class="mega__link">Jackets/Coats</a>
+                            <a href="#" class="mega__link">Blazers</a>
+                            <a href="#" class="mega__link">Denim</a>
+                            <a href="#" class="mega__link">Leggings/Pants</a>
+                            <a href="#" class="mega__link">Skirts/Shorts</a>
+                            <a href="#" class="mega__link">Accessories</a>
+                        </div>
+                        <div class="mega__item">
+                            <h3 class="mega__title">HOME</h3>
+                            <a href="#" class="mega__link">Dresses</a>
+                            <a href="#" class="mega__link">Tops</a>
+                            <a href="#" class="mega__link">Sweaters/Knits</a>
+                            <a href="#" class="mega__link">Jackets/Coats</a>
+                            <a href="#" class="mega__link">Blazers</a>
+                            <a href="#" class="mega__link">Denim</a>
+                            <a href="#" class="mega__link">Leggings/Pants</a>
+                            <a href="#" class="mega__link">Skirts/Shorts</a>
+                            <a href="#" class="mega__link">Accessories</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav__item"><a href="#" class="nav__link">MAN</a>
+                    <div class="mega__box">
+                        <div class="mega__item">
+                            <h3 class="mega__title">MAN</h3>
+                            <a href="#" class="mega__link">Dresses</a>
+                            <a href="#" class="mega__link">Tops</a>
+                            <a href="#" class="mega__link">Sweaters/Knits</a>
+                            <a href="#" class="mega__link">Jackets/Coats</a>
+                            <a href="#" class="mega__link">Blazers</a>
+                            <a href="#" class="mega__link">Denim</a>
+                            <a href="#" class="mega__link">Leggings/Pants</a>
+                            <a href="#" class="mega__link">Skirts/Shorts</a>
+                            <a href="#" class="mega__link">Accessories</a>
+                        </div>
+                        <div class="mega__item">
+                            <h3 class="mega__title">MAN</h3>
+                            <a href="#" class="mega__link">Dresses</a>
+                            <a href="#" class="mega__link">Tops</a>
+                            <a href="#" class="mega__link">Sweaters/Knits</a>
+                            <a href="#" class="mega__link">Jackets/Coats</a>
+                            <a href="#" class="mega__link">Blazers</a>
+                            <a href="#" class="mega__link">Denim</a>
+                            <a href="#" class="mega__link">Leggings/Pants</a>
+                            <a href="#" class="mega__link">Skirts/Shorts</a>
+                            <a href="#" class="mega__link">Accessories</a>
+                        </div>
+                        <div class="mega__item">
+                            <h3 class="mega__title">MAN</h3>
+                            <a href="#" class="mega__link">Dresses</a>
+                            <a href="#" class="mega__link">Tops</a>
+                            <a href="#" class="mega__link">Sweaters/Knits</a>
+                            <a href="#" class="mega__link">Jackets/Coats</a>
+                            <a href="#" class="mega__link">Blazers</a>
+                            <a href="#" class="mega__link">Denim</a>
+                            <a href="#" class="mega__link">Leggings/Pants</a>
+                            <a href="#" class="mega__link">Skirts/Shorts</a>
+                            <a href="#" class="mega__link">Accessories</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav__item"><a href="#" class="nav__link">WOMEN</a>
+                    <div class="mega__box">
+                        <div class="mega__item">
+                            <h3 class="mega__title">WOMEN</h3>
+                            <a href="#" class="mega__link">Dresses</a>
+                            <a href="#" class="mega__link">Tops</a>
+                            <a href="#" class="mega__link">Sweaters/Knits</a>
+                            <a href="#" class="mega__link">Jackets/Coats</a>
+                            <a href="#" class="mega__link">Blazers</a>
+                            <a href="#" class="mega__link">Denim</a>
+                            <a href="#" class="mega__link">Leggings/Pants</a>
+                            <a href="#" class="mega__link">Skirts/Shorts</a>
+                            <a href="#" class="mega__link">Accessories</a>
+                        </div>
+                        <div class="mega__item">
+                            <h3 class="mega__title">WOMEN</h3>
+                            <a href="#" class="mega__link">Dresses</a>
+                            <a href="#" class="mega__link">Tops</a>
+                            <a href="#" class="mega__link">Sweaters/Knits</a>
+                            <a href="#" class="mega__link">Jackets/Coats</a>
+                            <br>
+                            <h3 class="mega__title">WOMEN</h3>
+                            <a href="#" class="mega__link">Dresses</a>
+                            <a href="#" class="mega__link">Tops</a>
+                            <a href="#" class="mega__link">Sweaters/Knits</a>
+                        </div>
+                        <div class="mega__item">
+                            <h3 class="mega__title">WOMEN</h3>
+                            <a href="#" class="mega__link">Dresses</a>
+                            <a href="#" class="mega__link">Tops</a>
+                            <a href="#" class="mega__link">Sweaters/Knits</a>
+                            <a href="#" class="mega__link">Jackets/Coats</a>
+                            <br>
+                            <img src="img/rectangle_23_1802.png" alt="sale">
+                        </div>
+                    </div>
+                </li>
+                <li class="nav__item"><a href="#" class="nav__link">KIDS</a>
+                    <div class="mega__box">
+                        <div class="mega__item">
+                            <h3 class="mega__title">KIDS</h3>
+                            <a href="#" class="mega__link">Dresses</a>
+                            <a href="#" class="mega__link">Tops</a>
+                            <a href="#" class="mega__link">Sweaters/Knits</a>
+                            <a href="#" class="mega__link">Jackets/Coats</a>
+                            <a href="#" class="mega__link">Blazers</a>
+                            <a href="#" class="mega__link">Denim</a>
+                            <a href="#" class="mega__link">Leggings/Pants</a>
+                            <a href="#" class="mega__link">Skirts/Shorts</a>
+                            <a href="#" class="mega__link">Accessories</a>
+                        </div>
+                        <div class="mega__item">
+                            <h3 class="mega__title">KIDS</h3>
+                            <a href="#" class="mega__link">Dresses</a>
+                            <a href="#" class="mega__link">Tops</a>
+                            <a href="#" class="mega__link">Sweaters/Knits</a>
+                            <a href="#" class="mega__link">Jackets/Coats</a>
+                            <a href="#" class="mega__link">Blazers</a>
+                            <a href="#" class="mega__link">Denim</a>
+                            <a href="#" class="mega__link">Leggings/Pants</a>
+                            <a href="#" class="mega__link">Skirts/Shorts</a>
+                            <a href="#" class="mega__link">Accessories</a>
+                        </div>
+                        <div class="mega__item">
+                            <h3 class="mega__title">KIDS</h3>
+                            <a href="#" class="mega__link">Dresses</a>
+                            <a href="#" class="mega__link">Tops</a>
+                            <a href="#" class="mega__link">Sweaters/Knits</a>
+                            <a href="#" class="mega__link">Jackets/Coats</a>
+                            <a href="#" class="mega__link">Blazers</a>
+                            <a href="#" class="mega__link">Denim</a>
+                            <a href="#" class="mega__link">Leggings/Pants</a>
+                            <a href="#" class="mega__link">Skirts/Shorts</a>
+                            <a href="#" class="mega__link">Accessories</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav__item"><a href="#" class="nav__link">ACCOSERIESE</a>
+                    <div class="mega__box">
+                        <div class="mega__item">
+                            <h3 class="mega__title">ACCOSERIESE</h3>
+                            <a href="#" class="mega__link">Dresses</a>
+                            <a href="#" class="mega__link">Tops</a>
+                            <a href="#" class="mega__link">Sweaters/Knits</a>
+                            <a href="#" class="mega__link">Jackets/Coats</a>
+                            <a href="#" class="mega__link">Blazers</a>
+                            <a href="#" class="mega__link">Denim</a>
+                            <a href="#" class="mega__link">Leggings/Pants</a>
+                            <a href="#" class="mega__link">Skirts/Shorts</a>
+                            <a href="#" class="mega__link">Accessories</a>
+                        </div>
+                        <div class="mega__item">
+                            <h3 class="mega__title">ACCOSERIESE</h3>
+                            <a href="#" class="mega__link">Dresses</a>
+                            <a href="#" class="mega__link">Tops</a>
+                            <a href="#" class="mega__link">Sweaters/Knits</a>
+                            <a href="#" class="mega__link">Jackets/Coats</a>
+                            <a href="#" class="mega__link">Blazers</a>
+                            <a href="#" class="mega__link">Denim</a>
+                            <a href="#" class="mega__link">Leggings/Pants</a>
+                            <a href="#" class="mega__link">Skirts/Shorts</a>
+                            <a href="#" class="mega__link">Accessories</a>
+                        </div>
+                        <div class="mega__item">
+                            <h3 class="mega__title">ACCOSERIESE</h3>
+                            <a href="#" class="mega__link">Dresses</a>
+                            <a href="#" class="mega__link">Tops</a>
+                            <a href="#" class="mega__link">Sweaters/Knits</a>
+                            <a href="#" class="mega__link">Jackets/Coats</a>
+                            <a href="#" class="mega__link">Blazers</a>
+                            <a href="#" class="mega__link">Denim</a>
+                            <a href="#" class="mega__link">Leggings/Pants</a>
+                            <a href="#" class="mega__link">Skirts/Shorts</a>
+                            <a href="#" class="mega__link">Accessories</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav__item last"><a href="#" class="nav__link">FEATURED</a>
+                    <div class="mega__box">
+                        <div class="mega__item">
+                            <h3 class="mega__title">FEATURED</h3>
+                            <a href="#" class="mega__link">Dresses</a>
+                            <a href="#" class="mega__link">Tops</a>
+                            <a href="#" class="mega__link">Sweaters/Knits</a>
+                            <a href="#" class="mega__link">Jackets/Coats</a>
+                            <a href="#" class="mega__link">Blazers</a>
+                            <a href="#" class="mega__link">Denim</a>
+                            <a href="#" class="mega__link">Leggings/Pants</a>
+                            <a href="#" class="mega__link">Skirts/Shorts</a>
+                            <a href="#" class="mega__link">Accessories</a>
+                        </div>
+                        <div class="mega__item">
+                            <h3 class="mega__title">FEATURED</h3>
+                            <a href="#" class="mega__link">Dresses</a>
+                            <a href="#" class="mega__link">Tops</a>
+                            <a href="#" class="mega__link">Sweaters/Knits</a>
+                            <a href="#" class="mega__link">Jackets/Coats</a>
+                            <a href="#" class="mega__link">Blazers</a>
+                            <a href="#" class="mega__link">Denim</a>
+                            <a href="#" class="mega__link">Leggings/Pants</a>
+                            <a href="#" class="mega__link">Skirts/Shorts</a>
+                            <a href="#" class="mega__link">Accessories</a>
+                        </div>
+                        <div class="mega__item">
+                            <h3 class="mega__title">FEATURED</h3>
+                            <a href="#" class="mega__link">Dresses</a>
+                            <a href="#" class="mega__link">Tops</a>
+                            <a href="#" class="mega__link">Sweaters/Knits</a>
+                            <a href="#" class="mega__link">Jackets/Coats</a>
+                            <a href="#" class="mega__link">Blazers</a>
+                            <a href="#" class="mega__link">Denim</a>
+                            <a href="#" class="mega__link">Leggings/Pants</a>
+                            <a href="#" class="mega__link">Skirts/Shorts</a>
+                            <a href="#" class="mega__link">Accessories</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav__item last"><a href="#" class="nav__link">HOT DEALS</a>
+                    <div class="mega__box">
+                        <div class="mega__item">
+                            <h3 class="mega__title">HOT DEALS</h3>
+                            <a href="#" class="mega__link">Dresses</a>
+                            <a href="#" class="mega__link">Tops</a>
+                            <a href="#" class="mega__link">Sweaters/Knits</a>
+                            <a href="#" class="mega__link">Jackets/Coats</a>
+                            <a href="#" class="mega__link">Blazers</a>
+                            <a href="#" class="mega__link">Denim</a>
+                            <a href="#" class="mega__link">Leggings/Pants</a>
+                            <a href="#" class="mega__link">Skirts/Shorts</a>
+                            <a href="#" class="mega__link">Accessories</a>
+                        </div>
+                        <div class="mega__item">
+                            <h3 class="mega__title">HOT DEALS</h3>
+                            <a href="#" class="mega__link">Dresses</a>
+                            <a href="#" class="mega__link">Tops</a>
+                            <a href="#" class="mega__link">Sweaters/Knits</a>
+                            <a href="#" class="mega__link">Jackets/Coats</a>
+                            <a href="#" class="mega__link">Blazers</a>
+                            <a href="#" class="mega__link">Denim</a>
+                            <a href="#" class="mega__link">Leggings/Pants</a>
+                            <a href="#" class="mega__link">Skirts/Shorts</a>
+                            <a href="#" class="mega__link">Accessories</a>
+                        </div>
+                        <div class="mega__item">
+                            <h3 class="mega__title">HOT DEALS</h3>
+                            <a href="#" class="mega__link">Dresses</a>
+                            <a href="#" class="mega__link">Tops</a>
+                            <a href="#" class="mega__link">Sweaters/Knits</a>
+                            <a href="#" class="mega__link">Jackets/Coats</a>
+                            <a href="#" class="mega__link">Blazers</a>
+                            <a href="#" class="mega__link">Denim</a>
+                            <a href="#" class="mega__link">Leggings/Pants</a>
+                            <a href="#" class="mega__link">Skirts/Shorts</a>
+                            <a href="#" class="mega__link">Accessories</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
         <img class="top__background" src="img/top_background.png" alt="top">
         <div class="promo__content center">
             <div class="promo__info">
@@ -96,7 +391,8 @@
                     <h4 class="card__title">MANGO  PEOPLE  T-SHIRT</h4>
                     <span class="card__price">$52.00</span>
                 </div>
-                <a href="#" class="product__add"><svg width="27" height="25" viewBox="0 0 27 25" fill="none"
+                <a href="#" class="product__add">
+                    <svg width="27" height="25" viewBox="0 0 27 25" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M21.9509 23.2667H21.8386C21.2294 23.2667 20.7177 22.7671 20.6735 22.1294C20.629 21.4607 21.1175 20.8785 21.7626 20.8346C21.788 20.8329 21.8145 20.832 21.8405 20.832C22.4575 20.832 22.9743 21.3219 23.0201 21.9487C23.0319 22.1971 22.9914 22.5514 22.736 22.8439L22.73 22.8507L22.7242 22.8575C22.5275 23.0912 22.2607 23.2321 21.9509 23.2667ZM8.21887 23.2604C7.5683 23.2604 7.03906 22.7174 7.03906 22.05C7.03906 21.3832 7.5683 20.8406 8.21887 20.8406C8.86945 20.8406 9.39868 21.3832 9.39868 22.05C9.39868 22.7174 8.86945 23.2604 8.21887 23.2604Z"
@@ -116,7 +412,8 @@
                     <h4 class="card__title">MANGO  PEOPLE  T-SHIRT</h4>
                     <span class="card__price">$52.00</span>
                 </div>
-                <a href="#" class="product__add"><svg width="27" height="25" viewBox="0 0 27 25" fill="none"
+                <a href="#" class="product__add">
+                    <svg width="27" height="25" viewBox="0 0 27 25" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M21.9509 23.2667H21.8386C21.2294 23.2667 20.7177 22.7671 20.6735 22.1294C20.629 21.4607 21.1175 20.8785 21.7626 20.8346C21.788 20.8329 21.8145 20.832 21.8405 20.832C22.4575 20.832 22.9743 21.3219 23.0201 21.9487C23.0319 22.1971 22.9914 22.5514 22.736 22.8439L22.73 22.8507L22.7242 22.8575C22.5275 23.0912 22.2607 23.2321 21.9509 23.2667ZM8.21887 23.2604C7.5683 23.2604 7.03906 22.7174 7.03906 22.05C7.03906 21.3832 7.5683 20.8406 8.21887 20.8406C8.86945 20.8406 9.39868 21.3832 9.39868 22.05C9.39868 22.7174 8.86945 23.2604 8.21887 23.2604Z"
@@ -136,7 +433,8 @@
                     <h4 class="card__title">MANGO  PEOPLE  T-SHIRT</h4>
                     <span class="card__price">$52.00</span>
                 </div>
-                <a href="#" class="product__add"><svg width="27" height="25" viewBox="0 0 27 25" fill="none"
+                <a href="#" class="product__add">
+                    <svg width="27" height="25" viewBox="0 0 27 25" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M21.9509 23.2667H21.8386C21.2294 23.2667 20.7177 22.7671 20.6735 22.1294C20.629 21.4607 21.1175 20.8785 21.7626 20.8346C21.788 20.8329 21.8145 20.832 21.8405 20.832C22.4575 20.832 22.9743 21.3219 23.0201 21.9487C23.0319 22.1971 22.9914 22.5514 22.736 22.8439L22.73 22.8507L22.7242 22.8575C22.5275 23.0912 22.2607 23.2321 21.9509 23.2667ZM8.21887 23.2604C7.5683 23.2604 7.03906 22.7174 7.03906 22.05C7.03906 21.3832 7.5683 20.8406 8.21887 20.8406C8.86945 20.8406 9.39868 21.3832 9.39868 22.05C9.39868 22.7174 8.86945 23.2604 8.21887 23.2604Z"
@@ -156,7 +454,8 @@
                     <h4 class="card__title">MANGO  PEOPLE  T-SHIRT</h4>
                     <span class="card__price">$52.00</span>
                 </div>
-                <a href="#" class="product__add"><svg width="27" height="25" viewBox="0 0 27 25" fill="none"
+                <a href="#" class="product__add">
+                    <svg width="27" height="25" viewBox="0 0 27 25" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M21.9509 23.2667H21.8386C21.2294 23.2667 20.7177 22.7671 20.6735 22.1294C20.629 21.4607 21.1175 20.8785 21.7626 20.8346C21.788 20.8329 21.8145 20.832 21.8405 20.832C22.4575 20.832 22.9743 21.3219 23.0201 21.9487C23.0319 22.1971 22.9914 22.5514 22.736 22.8439L22.73 22.8507L22.7242 22.8575C22.5275 23.0912 22.2607 23.2321 21.9509 23.2667ZM8.21887 23.2604C7.5683 23.2604 7.03906 22.7174 7.03906 22.05C7.03906 21.3832 7.5683 20.8406 8.21887 20.8406C8.86945 20.8406 9.39868 21.3832 9.39868 22.05C9.39868 22.7174 8.86945 23.2604 8.21887 23.2604Z"
@@ -176,7 +475,8 @@
                     <h4 class="card__title">MANGO  PEOPLE  T-SHIRT</h4>
                     <span class="card__price">$52.00</span>
                 </div>
-                <a href="#" class="product__add"><svg width="27" height="25" viewBox="0 0 27 25" fill="none"
+                <a href="#" class="product__add">
+                    <svg width="27" height="25" viewBox="0 0 27 25" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M21.9509 23.2667H21.8386C21.2294 23.2667 20.7177 22.7671 20.6735 22.1294C20.629 21.4607 21.1175 20.8785 21.7626 20.8346C21.788 20.8329 21.8145 20.832 21.8405 20.832C22.4575 20.832 22.9743 21.3219 23.0201 21.9487C23.0319 22.1971 22.9914 22.5514 22.736 22.8439L22.73 22.8507L22.7242 22.8575C22.5275 23.0912 22.2607 23.2321 21.9509 23.2667ZM8.21887 23.2604C7.5683 23.2604 7.03906 22.7174 7.03906 22.05C7.03906 21.3832 7.5683 20.8406 8.21887 20.8406C8.86945 20.8406 9.39868 21.3832 9.39868 22.05C9.39868 22.7174 8.86945 23.2604 8.21887 23.2604Z"
@@ -196,7 +496,8 @@
                     <h4 class="card__title">MANGO  PEOPLE  T-SHIRT</h4>
                     <span class="card__price">$52.00</span>
                 </div>
-                <a href="#" class="product__add"><svg width="27" height="25" viewBox="0 0 27 25" fill="none"
+                <a href="#" class="product__add">
+                    <svg width="27" height="25" viewBox="0 0 27 25" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M21.9509 23.2667H21.8386C21.2294 23.2667 20.7177 22.7671 20.6735 22.1294C20.629 21.4607 21.1175 20.8785 21.7626 20.8346C21.788 20.8329 21.8145 20.832 21.8405 20.832C22.4575 20.832 22.9743 21.3219 23.0201 21.9487C23.0319 22.1971 22.9914 22.5514 22.736 22.8439L22.73 22.8507L22.7242 22.8575C22.5275 23.0912 22.2607 23.2321 21.9509 23.2667ZM8.21887 23.2604C7.5683 23.2604 7.03906 22.7174 7.03906 22.05C7.03906 21.3832 7.5683 20.8406 8.21887 20.8406C8.86945 20.8406 9.39868 21.3832 9.39868 22.05C9.39868 22.7174 8.86945 23.2604 8.21887 23.2604Z"
@@ -216,7 +517,8 @@
                     <h4 class="card__title">MANGO  PEOPLE  T-SHIRT</h4>
                     <span class="card__price">$52.00</span>
                 </div>
-                <a href="#" class="product__add"><svg width="27" height="25" viewBox="0 0 27 25" fill="none"
+                <a href="#" class="product__add">
+                    <svg width="27" height="25" viewBox="0 0 27 25" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M21.9509 23.2667H21.8386C21.2294 23.2667 20.7177 22.7671 20.6735 22.1294C20.629 21.4607 21.1175 20.8785 21.7626 20.8346C21.788 20.8329 21.8145 20.832 21.8405 20.832C22.4575 20.832 22.9743 21.3219 23.0201 21.9487C23.0319 22.1971 22.9914 22.5514 22.736 22.8439L22.73 22.8507L22.7242 22.8575C22.5275 23.0912 22.2607 23.2321 21.9509 23.2667ZM8.21887 23.2604C7.5683 23.2604 7.03906 22.7174 7.03906 22.05C7.03906 21.3832 7.5683 20.8406 8.21887 20.8406C8.86945 20.8406 9.39868 21.3832 9.39868 22.05C9.39868 22.7174 8.86945 23.2604 8.21887 23.2604Z"
@@ -236,7 +538,8 @@
                     <h4 class="card__title">MANGO  PEOPLE  T-SHIRT</h4>
                     <span class="card__price">$52.00</span>
                 </div>
-                <a href="#" class="product__add"><svg width="27" height="25" viewBox="0 0 27 25" fill="none"
+                <a href="#" class="product__add">
+                    <svg width="27" height="25" viewBox="0 0 27 25" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M21.9509 23.2667H21.8386C21.2294 23.2667 20.7177 22.7671 20.6735 22.1294C20.629 21.4607 21.1175 20.8785 21.7626 20.8346C21.788 20.8329 21.8145 20.832 21.8405 20.832C22.4575 20.832 22.9743 21.3219 23.0201 21.9487C23.0319 22.1971 22.9914 22.5514 22.736 22.8439L22.73 22.8507L22.7242 22.8575C22.5275 23.0912 22.2607 23.2321 21.9509 23.2667ZM8.21887 23.2604C7.5683 23.2604 7.03906 22.7174 7.03906 22.05C7.03906 21.3832 7.5683 20.8406 8.21887 20.8406C8.86945 20.8406 9.39868 21.3832 9.39868 22.05C9.39868 22.7174 8.86945 23.2604 8.21887 23.2604Z"
@@ -299,11 +602,11 @@
     </section>
     <section class="reviews container center">
         <div class="review">
-            <div class="review__promo">
+            <figure class="review__promo">
                 <div class="review__img">
                     <img src="img/ellipse.png" alt="ellipse">
                 </div>
-                <div class="review_text">
+                <figcaption class="review_text">
                     <blockquote class="review__quote">
                         <p class="review__des">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
                         <br>
@@ -316,8 +619,8 @@
                         <button class="line__span"></button>
                         <button class="line__span"></button>
                     </div>
-                </div>
-            </div>
+                </figcaption>
+            </figure>
             <div class="subscribe">
                 <h3 class="subscribe__head">SUBSCRIBE</h3>
                 <p class="subscribe__heading">FOR OUR NEWLETTER AND PROMOTION</p>
