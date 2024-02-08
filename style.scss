@@ -907,6 +907,11 @@ a {
                     .info__link:hover {
                         color: $base-color-pink;
                     }
+
+                    .active {
+                        font-weight: 700;
+                        color: $base-color-pink;
+                    }
                 }
             }
         }
@@ -1360,6 +1365,66 @@ a {
             filter: brightness(0.5);
         }
     }
+
+    .view {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .pagination {
+            width: 261px;
+            height: 40px;
+            background-color: #ffffff;
+            border: 1px solid #ebebeb;
+            border-radius: 3px;
+        }
+        .pagination a {
+            color: $base-color-text;
+            float: left;
+            padding: 8px 7px;
+            text-decoration: none;
+            transition: background-color .3s;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 700;
+            color: #c4c4c4;
+
+            .fa-angle-left {
+                padding-left: 7px;
+            }
+        }
+        
+        .pagination a.active {
+            color: $base-color-pink;
+        }
+        
+        .pagination a:hover:not(.active) {
+            color: $base-color-pink;
+        }
+        .product__btn {
+            width: 150px;
+            height: 44px;
+            border: 1px solid $base-color-pink;
+            padding: 0 20px 0 20px;
+            background-color: #fff;
+            transition: all .5s;
+    
+            .product__catalog {
+                font-size: 16px;
+                line-height: 26px;
+                font-weight: 700;
+                color: $base-color-pink;
+            }
+        }
+        .product__btn:hover {
+            background-color: $base-color-pink;
+
+            .product__catalog {
+                color: #fff;
+            }
+        }
+    }
+    
 }
 
 

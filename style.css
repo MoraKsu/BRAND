@@ -804,6 +804,10 @@ a {
 .top__main .info__top .info__list .info__items .info__item .info__link:hover {
   color: #f16d7f;
 }
+.top__main .info__top .info__list .info__items .info__item .active {
+  font-weight: 700;
+  color: #f16d7f;
+}
 
 .advantages {
   background-color: #222222;
@@ -1197,4 +1201,56 @@ a {
 }
 .catalog .product__cards .product__card:hover .product__img {
   filter: brightness(0.5);
+}
+.catalog .view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.catalog .view .pagination {
+  width: 261px;
+  height: 40px;
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+}
+.catalog .view .pagination a {
+  color: #222222;
+  float: left;
+  padding: 8px 7px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #c4c4c4;
+}
+.catalog .view .pagination a .fa-angle-left {
+  padding-left: 7px;
+}
+.catalog .view .pagination a.active {
+  color: #f16d7f;
+}
+.catalog .view .pagination a:hover:not(.active) {
+  color: #f16d7f;
+}
+.catalog .view .product__btn {
+  width: 150px;
+  height: 44px;
+  border: 1px solid #f16d7f;
+  padding: 0 20px 0 20px;
+  background-color: #fff;
+  transition: all 0.5s;
+}
+.catalog .view .product__btn .product__catalog {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #f16d7f;
+}
+.catalog .view .product__btn:hover {
+  background-color: #f16d7f;
+}
+.catalog .view .product__btn:hover .product__catalog {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
