@@ -1207,7 +1207,7 @@ a {
                         }
                         
                         input[type="range"]::-moz-range-thumb {
-                            -webkit-appearance: none;
+                            appearance: none;
                             height: 1.7em;
                             width: 1.7em;
                             cursor: pointer;
