@@ -635,23 +635,35 @@
     <section class="reviews container center">
         <div class="review">
             <figure class="review__promo">
-                <div class="review__img">
-                    <img src="img/ellipse.png" alt="ellipse">
-                </div>
                 <figcaption class="review_text">
-                    <blockquote class="review__quote">
+                    <div class="review__img">
+                        <img src="../img/ellipse.png" alt="ellipse">
+                    </div>
+                    <blockquote class="review__quote mySlides">
                         <p class="review__des">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
                         <br>
                         <cite class="quote__name">Bin Burhan</cite>
                         <p class="quote__location">Dhaka, Bd</p>
                     </blockquote>
+                    <blockquote class="review__quote mySlides">
+                        <p class="review__des">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, iusto. Magnam dolore molestias deserunt quo. Accusantium quasi esse totam odio culpa dolor ducimus nemo nostrum!”</p>
+                        <br>
+                        <cite class="quote__name">Artur Borak</cite>
+                        <p class="quote__location">Location</p>
+                    </blockquote>
+                    <blockquote class="review__quote mySlides">
+                        <p class="review__des">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ut. Ipsam ducimus dolorum hic aspernatur eos dolores suscipit voluptatum distinctio.”</p>
+                        <br>
+                        <cite class="quote__name">Author Name</cite>
+                        <p class="quote__location">Location</p>
+                    </blockquote>
                     <br>
-                    <div class="line">
-                        <button class="line__span"></button>
-                        <button class="line__span"></button>
-                        <button class="line__span"></button>
-                    </div>
                 </figcaption>
+                <div class="line">
+                    <span class="line__span" onclick="currentSlide(1)"></span>
+                    <span class="line__span" onclick="currentSlide(2)"></span>
+                    <span class="line__span" onclick="currentSlide(3)"></span>
+                </div>
             </figure>
             <div class="subscribe">
                 <h3 class="subscribe__head">SUBSCRIBE</h3>

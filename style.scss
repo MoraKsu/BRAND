@@ -747,15 +747,21 @@ a {
         .review__promo {
             display: flex;
             max-width: 497px;
+            position: relative;
 
-            .review__img {
-                padding-right: 28px;
-                min-width: 83px;
-                min-height: 83px;
-            }
             .review_text {
                 color: $base-color-text;
+                display: inline-block;
+
+                .review__img {
+                    padding-right: 28px;
+                    min-width: 83px;
+                    min-height: 83px;
+                    position: absolute;
+                }
                 .review__quote {
+                    width: 386px;
+                    margin-left: 100px;
                     .review__des {
                         font-size: 16px;
                         line-height: 26px;
@@ -778,9 +784,11 @@ a {
                     }
                 }
             }
-
             .line {
                 display: flex;
+                right: 40%;
+                bottom: -30px;
+                position: absolute;
     
                 .line__span {
                     width: 38px;
@@ -789,6 +797,9 @@ a {
                     border: 1px solid #d6d6d6;
                     margin: 13px;
                     cursor: pointer;
+                    display: inline-block;
+                    transition: background-color 0.6s ease;
+    
                 }
                 .line__span:hover {
                     background-color: $base-color-pink;

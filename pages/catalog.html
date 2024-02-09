@@ -48,9 +48,41 @@
                 </form>
             </div>
             <div class="heading_right">
-                <a href="#" class="basket">
-                    <img src="../img/forma_1_1113.png" alt="basket">
-                </a>
+                <div class="dropdown__basket">
+                    <div class="basket" onclick="basketFunction()" role="button" aria-haspopup="true" aria-expanded="false">
+                        <img src="../img/forma_1_1113.png" alt="basket">
+                        <div class="content-basket" id="basketDropdown">
+                            <a href="#" class="basket__box">
+                                <div href="#" class="basket__img"><img src="../img/rebox1.png" alt="rebox"></div>
+                                <div class="box__item">
+                                    <p class="box__text">Rebox Zane</p>
+                                    <p class="box__stars"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i></p>
+                                    <p class="box__cash">1 x $250</p>
+                                </div>
+                                <div class="basket__times"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
+                            </a>
+                            <hr>
+                            <a href="#" class="basket__box">
+                                <div href="#" class="basket__img"><img src="../img/rebox2.png" alt="rebox"></div>
+                                <div class="box__item">
+                                    <p class="box__text">Rebox Zane</p>
+                                    <p class="box__stars"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-half-o" aria-hidden="true"></i></p>
+                                    <p class="box__cash">1 x $250</p>
+                                </div>
+                                <div class="basket__times"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
+                            </a>
+                            <hr>
+                            <div class="basket__text">
+                                <p class="total">TOTAL</p>
+                                <p class="price">$500.00</p>
+                            </div>
+                            <div class="basket__btn">
+                                <a href="#" class="btn">Checkout</a>
+                                <a href="#" class="btn">Go to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="dropdown">
                     <button class="btn__account" onclick="myFunction()" type="menu">My Account <i class="fa fa-caret-down" aria-hidden="true"></i></button>
                     <div class="dropdown-content" id="myDropdown">
@@ -826,23 +858,35 @@
     <section class="reviews container center">
         <div class="review">
             <figure class="review__promo">
-                <div class="review__img">
-                    <img src="../img/ellipse.png" alt="ellipse">
-                </div>
                 <figcaption class="review_text">
-                    <blockquote class="review__quote">
+                    <div class="review__img">
+                        <img src="../img/ellipse.png" alt="ellipse">
+                    </div>
+                    <blockquote class="review__quote mySlides">
                         <p class="review__des">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
                         <br>
                         <cite class="quote__name">Bin Burhan</cite>
                         <p class="quote__location">Dhaka, Bd</p>
                     </blockquote>
+                    <blockquote class="review__quote mySlides">
+                        <p class="review__des">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, iusto. Magnam dolore molestias deserunt quo. Accusantium quasi esse totam odio culpa dolor ducimus nemo nostrum!”</p>
+                        <br>
+                        <cite class="quote__name">Artur Borak</cite>
+                        <p class="quote__location">Location</p>
+                    </blockquote>
+                    <blockquote class="review__quote mySlides">
+                        <p class="review__des">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ut. Ipsam ducimus dolorum hic aspernatur eos dolores suscipit voluptatum distinctio.”</p>
+                        <br>
+                        <cite class="quote__name">Author Name</cite>
+                        <p class="quote__location">Location</p>
+                    </blockquote>
                     <br>
-                    <div class="line">
-                        <button class="line__span"></button>
-                        <button class="line__span"></button>
-                        <button class="line__span"></button>
-                    </div>
                 </figcaption>
+                <div class="line">
+                    <span class="line__span" onclick="currentSlide(1)"></span>
+                    <span class="line__span" onclick="currentSlide(2)"></span>
+                    <span class="line__span" onclick="currentSlide(3)"></span>
+                </div>
             </figure>
             <div class="subscribe">
                 <h3 class="subscribe__head">SUBSCRIBE</h3>
