@@ -24,6 +24,22 @@ window.onclick = function(e) {
   }
 }
 
+document.addEventListener('click', function(event) {
+  var dropdown = document.getElementById("basketDropdown");
+  var basket = document.querySelector('.basket');
+
+  var isClickInsideBasket = basket.contains(event.target) || dropdown.contains(event.target);
+
+  if (!isClickInsideBasket) {
+      dropdown.classList.remove('show');
+  }
+});
+
+function basketFunction() {
+  var dropdown = document.getElementById("basketDropdown");
+  dropdown.classList.toggle("show");
+}
+
 window.onload = function(){
   slideOne();
   slideTwo();

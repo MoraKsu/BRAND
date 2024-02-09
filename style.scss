@@ -166,8 +166,107 @@ a {
             align-items: center;
             overflow: hidden;
 
-            .basket {
-                margin-right: 26px;
+            .dropdown__basket {
+                float: left;
+                overflow: hidden;
+                .basket {
+                    margin-right: 26px;
+                    border: none;
+                    background-color: #fff;
+                    cursor: pointer;
+
+                    .content-basket {
+                        display: none;
+                        position: absolute;
+                        padding: 10px;
+                        border: 1px solid #e8e8e8;
+                        background-color: #fff;
+                        border-radius: 5px;
+                        max-width: 262px;
+                        z-index: 5;
+                        .basket__box {
+                            display: flex;
+                            align-items: center;
+                            color: $base-color-text;
+                            padding: 10px;
+                            .box__item {
+                                padding-left: 10px;
+                                padding-right: 10px;
+                                float: none;
+                                .box__text {
+                                    padding: 5px;
+                                    font-size: 12px;
+                                    line-height: 1.2;
+                                    font-weight: 700;
+                                    text-transform: uppercase;
+                                    color: $base-color-text;
+                                }
+                                .box__stars {
+                                    padding: 5px;
+                                    font-size: 12px;
+                                    line-height: 1.2;
+                                    font-weight: 400;
+                                    color: #e4af48;
+                                }
+                                .box__cash {
+                                    padding: 5px;
+                                    font-size: 12px;
+                                    line-height: 1.2;
+                                    font-weight: 400;
+                                    color: $base-color-pink;
+                                }
+                            }
+                            .basket__times {
+                                padding-left: 50px;
+                                font-size: 16px;
+                                line-height: 1.2;
+                                font-weight: 400;
+                                color: #c0c0c0;
+                            }
+                            .basket__times:hover {
+                                color: $base-color-pink;
+                            }
+                        }
+                        hr {
+                            border: 1px solid rgba(237,237,237,0.74);
+                        }
+                        .basket__text {
+                            display: flex;
+                            justify-content: space-between;
+                            font-size: 16px;
+                            line-height: 1.2;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            color: $base-color-text;
+                            padding-top: 10px;
+                        }
+                        .basket__btn {
+                            display: grid;
+                            justify-content: center;
+                            gap: 10px;
+                            margin-top: 20px;
+
+                            .btn {
+                                font-size: 14px;
+                                line-height: 1.2;
+                                font-weight: 700;
+                                text-transform: uppercase;
+                                text-align: center;
+                                color: #4a4a4a;
+                                border: 1px solid #eaeaea;
+                                width: 215px;
+                                padding: 20px;
+                            }
+                            .btn:hover {
+                                border: 1px solid $base-color-pink;
+                                color: $base-color-pink;
+                            }
+                        }
+                    }
+                }
+            }
+            .dropdown__basket .content-basket.show {
+                display: block !important;
             }
 
             .dropdown {
@@ -414,6 +513,12 @@ a {
                 color: $base-color-pink;
             }
         }
+    }
+    .promo__card:hover {
+        transform: scale(1.1);
+        transition: all .5s;
+        box-shadow: 0 0 5px #7a7a7a;
+        filter: brightness(0.9);
     }
 }
 
