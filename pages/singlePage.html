@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Cart</title>
+    <title>Single Page</title>
     <script src="https://kit.fontawesome.com/3f27ae9b39.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../style.css">
 </head>
@@ -52,7 +52,7 @@
                     <div class="basket" onclick="basketFunction()" role="button" aria-haspopup="true" aria-expanded="false">
                         <img src="../img/forma_1_1113.png" alt="basket">
                         <div class="content-basket" id="basketDropdown">
-                            <a href="singlePage.html" class="basket__box">
+                            <a href="#" class="basket__box">
                                 <div href="#" class="basket__img"><img src="../img/rebox1.png" alt="rebox"></div>
                                 <div class="box__item">
                                     <p class="box__text">Rebox Zane</p>
@@ -62,7 +62,7 @@
                                 <div class="basket__times"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
                             </a>
                             <hr>
-                            <a href="singlePage.html" class="basket__box">
+                            <a href="#" class="basket__box">
                                 <div href="#" class="basket__img"><img src="../img/rebox2.png" alt="rebox"></div>
                                 <div class="box__item">
                                     <p class="box__text">Rebox Zane</p>
@@ -384,135 +384,6 @@
                     <li class="info__item"><a href="#" class="info__link">/ MAN</a></li>
                     <li class="info__item"><a href="#" class="info__link active">/ NEW ARRIVALS</a></li>
                 </ul>
-            </div>
-        </div>
-    </section>
-    <section class="cart container center">
-        <table class="cart__table">
-            <tr class="cart__items">
-                <th class="cart__column cart_left">Product Details</th>
-                <th class="cart__column">unite Price</th>
-                <th class="cart__column">Quantity</th>
-                <th class="cart__column">shipping</th>
-                <th class="cart__column">Subtotal</th>
-                <th class="cart__column cart_right">ACTION</th>
-            </tr>
-            <tr class="cart__items">
-                <td class="cart__row">
-                    <div class="cart__box cart_left">
-                        <div class="cart__img"><img src="../img/rectangle_26_2879.png" alt="rebox"></div>
-                        <div class="cart__desc">
-                            <h3 class="cart__heading">Mango People T-shirt</h3>
-                            <p class="cart__color"><b>Color:</b> <span style="font-weight: 300; padding: 5px;">Red</span></p>
-                            <p class="cart__size"><b>Size:</b> <span style="font-weight: 300; padding: 5px;">Xll</span></p>
-                        </div>
-                    </div>
-                </td>
-                <td class="cart__row">$150</td>
-                <td class="cart__row">
-                    <form action="#" class="cart__number">
-                        <input type="number" name="number" id="number" min="1" max="30">
-                    </form>
-                </td>
-                <td class="cart__row">FREE</td>
-                <td class="cart__row">$300</td>
-                <td class="cart__row">
-                    <div class="cart__circle">
-                        <i class="fa fa-times-circle" aria-hidden="true"></i>
-                    </div>
-                </td>
-            </tr>
-            <tr class="cart__items">
-                <td class="cart__row">
-                    <div class="cart__box cart_left">
-                        <div class="cart__img"><img src="../img/rectangle_26_2905.png" alt="rebox"></div>
-                        <div class="cart__desc">
-                            <h3 class="cart__heading">Mango People T-shirt</h3>
-                            <p class="cart__color"><b>Color:</b> <span style="font-weight: 300; padding: 5px;">Red</span></p>
-                            <p class="cart__size"><b>Size:</b> <span style="font-weight: 300; padding: 5px;">Xll</span></p>
-                        </div>
-                    </div>
-                </td>
-                <td class="cart__row">$150</td>
-                <td class="cart__row">
-                    <form action="#" class="cart__number">
-                        <input type="number" name="number" id="number" min="1" max="30">
-                    </form>
-                </td>
-                <td class="cart__row">FREE</td>
-                <td class="cart__row">$300</td>
-                <td class="cart__row">
-                    <div class="cart__circle">
-                        <i class="fa fa-times-circle" aria-hidden="true"></i>
-                    </div>
-                </td>
-            </tr>
-            <tr class="cart__items">
-                <td class="cart__row">
-                    <div class="cart__box cart_left">
-                        <div class="cart__img"><img src="../img/rectangle_26_2920.png" alt="rebox"></div>
-                        <div class="cart__desc">
-                            <h3 class="cart__heading">Mango People T-shirt</h3>
-                            <p class="cart__color"><b>Color:</b> <span style="font-weight: 300; padding: 5px;">Red</span></p>
-                            <p class="cart__size"><b>Size:</b> <span style="font-weight: 300; padding: 5px;">Xll</span></p>
-                        </div>
-                    </div>
-                </td>
-                <td class="cart__row">$150</td>
-                <td class="cart__row">
-                    <form action="#" class="cart__number">
-                        <input type="number" name="number" id="number" min="1" max="30">
-                    </form>
-                </td>
-                <td class="cart__row">FREE</td>
-                <td class="cart__row">$300</td>
-                <td class="cart__row">
-                    <div class="cart__circle">
-                        <i class="fa fa-times-circle" aria-hidden="true"></i>
-                    </div>
-                </td>
-            </tr>
-        </table>
-        <div class="cart__button">
-            <a href="#" class="cart__btn">cLEAR SHOPPING CART</a>
-            <a href="#" class="cart__btn">cONTINUE sHOPPING</a>
-        </div>
-    </section>
-    <section class="form container center">
-        <div class="form__adress">
-            <h3 class="form__heading">Shipping Adress</h3>
-            <form action="#" class="form__contact">
-                <select class="form__country" name="country" id="country">
-                    <option class="form__item" value="Bangladesh">Bangladesh</option>
-                    <option class="form__item" value="Russia">Russia</option>
-                    <option class="form__item" value="Thailand">Thailand</option>
-                    <option class="form__item" value="Nepal">Nepal</option>
-                    <option class="form__item" value="Butane">Butane</option>
-                    <option class="form__item" value="India">India</option>
-                    <option class="form__item" value="Vietnam">Vietnam</option>
-                    <option class="form__item" value="Myanmar">Myanmar</option>
-                    <option class="form__item" value="Laos">Laos</option>
-                    <option class="form__item" value="Cambodia">Cambodia</option>
-                    <option class="form__item" value="China">China</option>
-                    <option class="form__item" value="Kazakhstan">Kazakhstan</option>
-                </select>
-                <input class="form__state" type="text" name="state" id="state" placeholder="State">
-                <input class="form__postcode" type="text" name="Postcode" id="Postcode" placeholder="Postcode / Zip">
-                <input class="form__submit" type="submit" value="GET A QUOTE">
-            </form>
-        </div>
-        <div class="form__coupon">
-            <h3 class="form__heading">coupon discount</h3>
-            <p class="form__text">Enter your coupon code if you have one</p>
-            <br>
-            <input class="form__state" type="text" name="state" id="state" placeholder="State">
-            <input class="form__submit" type="submit" value="Apply coupon">
-        </div>
-        <div class="form__total">
-            <p class="form__sub-total">Sub total <span style="padding-left: 20px;">$900</span></p>
-            <p class="form__grand-total">Grand total <span style="padding-left: 20px; color: #f16d7f;">$900</span></p>
-            <div class="form__button">
-                <a href="checkout.html" class="form__btn">proceed to checkout</a>
             </div>
         </div>
     </section>
