@@ -1,0 +1,207 @@
+$base-color-pink: #f16d7f;
+$base-color-text: #222222;
+
+.register {
+    display: inline-block;
+    margin-top: 89px;
+    margin-bottom: 93px;
+    width: 100%;
+
+    &__shipping {
+        border-bottom: 1px solid #e8e8e8;
+        width: 100%;
+    }
+
+    &__head {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $base-color-text;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: space-around;
+        gap: 350px;
+    }
+
+    &__heading {
+        font-size: 13px;
+        line-height: 1.2;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $base-color-text;
+        padding-bottom: 15px;
+    }
+
+    &__text {
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #b3b2b2;
+        margin-bottom: 33px;
+    }
+
+    &__checking {
+        margin-top: 31px;
+        margin-bottom: 31px;
+    }
+
+    &__radio {
+        margin-bottom: 10px;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $base-color-text;
+    }
+ 
+    #checkout[type="radio"]:checked, 
+    #checkout[type="radio"]:not(:checked) {
+        position: absolute;
+        left: -9999px;
+    }
+
+    #checkout[type="radio"]:checked + &__radio, 
+    #checkout[type="radio"]:not(:checked) + &__radio {
+        display: block;
+        position: relative;
+        padding-left: 28px;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #checkout[type="radio"]:checked + &__radio:before, 
+    #checkout[type="radio"]:not(:checked) + &__radio:before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 14px;
+        height: 14px;
+        border: 2px solid #555555;
+        background-color: #ffffff;
+    }
+
+    #checkout[type="checkbox"]:checked + &__radio:before, 
+    #checkout[type="checkbox"]:not(:checked) + &__radio:before {
+        border-radius: 2px;
+    }
+
+    #checkout[type="radio"]:checked + &__radio:before, 
+    #checkout[type="radio"]:not(:checked) + &__radio:before {
+        border-radius: 100%;
+    }
+
+    #checkout[type="radio"]:checked + &__radio:after, 
+    #checkout[type="radio"]:not(:checked) + &__radio:after {
+        content: "";
+        position: absolute;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+
+    #checkout[type="radio"]:checked + &__radio:after, 
+    #checkout[type="radio"]:not(:checked) + &__radio:after {
+        left: 5px;
+        top: 5px;
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        background-color: #555555;
+    }
+
+    #checkout[type="radio"]:not(:checked) + &__radio:after {
+        opacity: 0;
+    }
+    
+    #checkout[type="radio"]:checked + &__radio:after {
+        opacity: 1;
+    }
+
+    &__fast {
+        display: block;
+        margin-top: 10px;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #b3b2b2;
+    }
+
+    &__fast:hover {
+        color: $base-color-pink;
+    }
+
+    .fa-angle-double-right {
+        padding-right: 5px;
+    }
+
+    &__button {
+        margin-top: 53px;
+        margin-bottom: 79px;
+    }
+
+    &__btn {
+        padding: 19px 53px 19px 53px;
+        border: 1px solid #eaeaea;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #4a4a4a;
+    }
+
+    &__btn:hover {
+        border: 1px solid $base-color-pink;
+        color: $base-color-pink;
+        transition: all .3s;
+    }
+
+    &__head {
+        list-style: none;
+    }
+      
+    &__head::-webkit-details-marker {
+          display: none;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__contact {
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 400;
+        color: $base-color-text;
+        padding-bottom: 10px;
+    }
+
+    &__area {
+        width: 390px;
+        height: 45px;
+        background-color: #ffffff;
+        border: 1px solid #eaeaea;
+        margin-bottom: 20px;
+    }
+
+    &__txt {
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #ff0d0d;
+    }
+
+    &__noborder {
+        border: none;
+    }
+
+    &__noborder:hover {
+        border: none;
+    }
+}
