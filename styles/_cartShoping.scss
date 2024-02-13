@@ -1,0 +1,269 @@
+$base-color-pink: #f16d7f;
+$base-color-text: #222222;
+
+.cart {
+    border-collapse: collapse;
+    width: 100%;
+    display: inline-block;
+
+    &__table {
+        margin-top: 90px;
+        margin-bottom: 44px;
+        width: 100%;
+        border-spacing: 0;
+    }
+
+    &__column {
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: -0.015em;
+        color: $base-color-text;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    &_left {
+        text-align: left;
+    }
+
+    &_right {
+        text-align: right;
+    }
+
+    &__row {
+        padding: 22px 0 22px 0;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #656565;
+    }
+
+    &__box {
+        display: flex;
+        color: $base-color-text;
+    }
+
+    &__desc {
+        padding-left: 21px;
+    }
+
+    &__heading {
+        font-size: 13px;
+        line-height: 1.2;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $base-color-text;
+        padding-bottom: 38px;
+    }
+
+    &__color {
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #575757;
+    }
+
+    &__size {
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #575757;
+    }
+
+    &__circle {
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #c0c0c0;
+        display: block;
+        float: inline-end;
+        padding-right: 15px;
+    }
+
+    &__circle:hover {
+        color: $base-color-pink;
+    }
+
+    #number {
+        width: 54px;
+        height: 30px;
+        background-color: #ffffff;
+        border: 1px solid #eaeaea;
+        text-align: center;
+        outline: none;
+    }
+    #number::-webkit-inner-spin-button,
+    #number::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    #number[type="number"] {
+        -moz-appearance: textfield;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 63px;
+    }
+
+    &__btn {
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #4a4a4a;
+        padding: 20px 39px 18px 39px;
+        background-color: #ffffff;
+        border: 1px solid #eaeaea;
+        cursor: pointer;
+    }
+
+    &__btn:hover {
+        color: #ffffff;
+        background-color: $base-color-pink;
+        transition: all .3s;
+    }
+
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 79px;
+    gap: 35px;
+
+    &__adress {
+        width: 355px;
+    }
+
+    &__heading {
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $base-color-text;
+    }
+
+    &__contact {
+        padding-top: 22px;
+    }
+
+    &__country,
+    &__state,
+    &__postcode {
+        width: 100%;
+        padding: 16px 0 16px 18px;
+        border: 1px solid #eaeaea;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        resize: vertical;
+        font-size: 13px;
+        line-height: 1.2;
+        font-weight: 300;
+        color: $base-color-text;
+    }
+
+    &__state::placeholder,
+    &__postcode::placeholder {
+        font-size: 13px;
+        line-height: 1.2;
+        font-weight: 300;
+        color: #b1b1b1;
+    }
+
+    &__submit {
+        padding: 12px 15px 12px 15px;
+        background-color: #ffffff;
+        border: 1px solid #eaeaea;
+    }
+
+    &__submit[value="GET A QUOTE"] {
+        font-size: 11px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #4a4a4a;
+    }
+    &__submit[value="Apply coupon"] {
+        font-size: 11px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #4a4a4a;
+    }
+
+    &__submit:hover {
+        background-color: $base-color-pink;
+        color: #ffffff;
+        transition: all .3s;
+    }
+
+    &__coupon {
+        width: 355px;
+    }
+
+    &__text {
+        padding-top: 28px;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 300;
+        color: $base-color-text;
+    }
+
+    &__total {
+        width: 319px;
+        height: 230px;
+        background-color: #f5f3f3;
+        text-align: end;
+        padding-right: 41px;
+        padding-left: 41px;
+    }
+
+    &__sub-total {
+        padding-top: 40px;
+        font-size: 11px;
+        line-height: 1.2;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #4a4a4a;
+    }
+
+    &__grand-total {
+        padding-top: 14px;
+        padding-bottom: 22px;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $base-color-text;
+        border-bottom: 1px solid #e2e2e2;
+    }
+
+    &__button {
+        margin-top: 40px;
+    }
+
+    &__btn {
+        width: 100%;
+        padding: 19px 62px 19px 62px;
+        border: 1px solid $base-color-pink;
+        background-color: $base-color-pink;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    &__btn:hover {
+        border: 1px solid $base-color-pink;
+        color: $base-color-pink;
+        background-color: #ffffff;
+        transition: all .3s;
+    }
+}
