@@ -151,6 +151,7 @@ $base-color-text: #222222;
 
     &__contact {
         padding-top: 22px;
+        position: relative;
     }
 
     &__country,
@@ -167,6 +168,29 @@ $base-color-text: #222222;
         font-weight: 300;
         color: $base-color-text;
     }
+
+    &__contact::after {
+        content: "▼";
+        padding: 0 8px;
+        font-size: 13px;
+        position: absolute;
+        right: 0;
+        top: 40px;
+        z-index: 1;
+        text-align: center;
+        width: 10%;
+        height: 100%;
+        pointer-events: none;
+        box-sizing: border-box;
+        color: #bdbdbd;;
+    }
+
+    &__country {
+        padding-right: 25px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
 
     &__state::placeholder,
     &__postcode::placeholder {

@@ -621,6 +621,7 @@
 }
 .form__contact {
   padding-top: 22px;
+  position: relative;
 }
 .form__country, .form__state, .form__postcode {
   width: 100%;
@@ -633,6 +634,27 @@
   line-height: 1.2;
   font-weight: 300;
   color: #222222;
+}
+.form__contact::after {
+  content: "▼";
+  padding: 0 8px;
+  font-size: 13px;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  z-index: 1;
+  text-align: center;
+  width: 10%;
+  height: 100%;
+  pointer-events: none;
+  box-sizing: border-box;
+  color: #bdbdbd;
+}
+.form__country {
+  padding-right: 25px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .form__state::-moz-placeholder, .form__postcode::-moz-placeholder {
   font-size: 13px;
