@@ -7,7 +7,7 @@ function btnFunction() {
 }
 
 window.onclick = function(e) {
-  if (!e.target.matches('.btn__account')) {
+  if (!e.target.matches('.header__btn-account')) {
     var myDropdown = document.getElementById("myDropdown");
       if (myDropdown.classList.contains('show')) {
         myDropdown.classList.remove('show');
@@ -16,7 +16,7 @@ window.onclick = function(e) {
 }
 
 window.onclick = function(e) {
-  if (!e.target.matches('.btn__dropdown')) {
+  if (!e.target.matches('.header__btn')) {
     var myDropdown = document.getElementById("btnDropdown");
       if (myDropdown.classList.contains('show')) {
         myDropdown.classList.remove('show');
